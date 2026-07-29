@@ -43,6 +43,7 @@ public class JwtUtil {
 		return extractedEmail.equals(email) && !isTokenExpired(token);
 	}
 	
+	
 	//Check if token expired
 	private boolean isTokenExpired(String token) {
 		Date expiration = Jwts.parserBuilder()
